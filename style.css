@@ -1,0 +1,43 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.top {
+  text-align: center;
+  background-color: aqua;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 0.5em 1em;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: black;
+  font-family: inherit;
+  font-size: 85%;
+  width: 70px;
+}
+
+.middle{
+
+
+}
+
+.bottom {
+  text-align:right
+
+}
+
+.overBudget {
+  background-color:crimson;
+  display: inline-block;
+
+}
+
