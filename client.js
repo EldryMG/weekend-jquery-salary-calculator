@@ -1,4 +1,6 @@
-
+// On lack of pushes to GitHub.  Ran into a problem, probably didn't fork from my repo, but from
+// Prime's.  In future assignments, I plan to get a more appropriate number of pushes to 
+// GitHub.
 const monthlyCosts = []
 const grandTotal = `<bold>Total Costs:</bold>`;
 
@@ -48,6 +50,8 @@ function addition() {
     sum += thisGuysSalary
     $(`.total`).append(`${sum.toFixed(2)}`)
     } if (sum > 20000){
+        //I used .css here instead of the way it was shown on the Weather table,
+        //I just couldn't get it to work.
         $(`.total`).css(`background-color`, `crimson`);
     }
 }
