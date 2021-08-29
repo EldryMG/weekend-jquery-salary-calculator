@@ -1,7 +1,6 @@
 
 const monthlyCosts = []
 const grandTotal = `<bold>Total Costs:</bold>`;
-let testing = "testing now"
 
 $(document).ready(readyNow);
 
@@ -10,7 +9,6 @@ function readyNow() {
     $(`#submit-button`).on(`click`, appendNameToTable);
     $(`#submit-button`).on(`click`, addition);
     $(`#employees-table-body`).on(`click`, `.delete-button`, removeTable)
-    $(`.total`).html(grandTotal);
 }
 
 //Function to add new values to the table
@@ -46,10 +44,11 @@ function addition() {
         monthlyCosts.push(salary)
     } for (let i = 0; i < monthlyCosts.length; i++) {
     let thisGuysSalary = parseInt(monthlyCosts[i])
+    $(`.total`).html(grandTotal);
     sum += thisGuysSalary
-    $(`.total`).append(`${sum}`)
+    $(`.total`).append(`${sum.toFixed(2)}`)
     } if (sum > 20000){
-        $(`.total`).css(`background-color`, `crimson`)
+        $(`.total`).css(`background-color`, `crimson`);
     }
 }
 
